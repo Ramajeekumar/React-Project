@@ -1,0 +1,58 @@
+// styles.scss
+@import "bootstrap/scss/bootstrap";
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+// .error {
+//     border: 1px solid #f00;
+//     background-color: #fdd;
+
+//     &--serious {
+//         @extend .error;
+//         border-width: 3px;
+//     }
+// }
+body {
+    @extend .bg-white;
+}
+
+a {
+    @extend .text-decoration-none;
+}
+
+main {
+    @extend .py-0;
+}
+
+footer {
+    @extend .bg-dark, .text-white, .py-4;
+    h5 {
+        @extend .py-3;
+    }
+    a {
+        @extend .text-white, .d-flex;
+        i {
+            @extend .pe-2;
+        }
+    }
+    ul {
+        @extend .m-0, .p-0;
+
+        li {
+            @extend .py-1;
+        }
+    }
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+.navbar {
+    @extend .bg-white, .navbar-expand-lg, .sticky-top, .py-1, .shadow-sm;
+    .nav-item {
+        @extend .px-4;
+        a {
+            @extend .fw-semibold, .small;
+        }
+    }
+}
